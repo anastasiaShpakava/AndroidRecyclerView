@@ -33,6 +33,17 @@ public class SecondActivity extends AppCompatActivity {
         Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(toDial));
         startActivity(callIntent);
     }
+    String subject = "Test";
+    String message = "Test";
+
+    public void sendEmail (View v){
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"shpakavaa@gmail.com"});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, message);
+        emailIntent.setType("message/rfc822");
+        startActivity(emailIntent);
+    }
 }
 
 

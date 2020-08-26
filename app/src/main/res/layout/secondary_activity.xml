@@ -22,51 +22,57 @@
         android:id="@+id/textNumber"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="216dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="43dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textMail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+        app:layout_constraintTop_toBottomOf="@+id/imageV"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textMail"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="143dp"
-        android:layout_marginEnd="240dp"
-        android:layout_marginBottom="197dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="191dp"
         android:text="email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+        app:layout_constraintTop_toBottomOf="@+id/imageV"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/dial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="42dp"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="22dp"
         android:onClick="dial"
+        android:src="@drawable/phone"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toStartOf="@+id/textNumber"
+        app:layout_constraintBottom_toTopOf="@+id/sendEmail"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+        app:layout_constraintTop_toBottomOf="@+id/imageV"
+        app:layout_constraintVertical_bias="0.764" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="143dp"
-        android:layout_marginEnd="32dp"
+    <ImageButton
+        android:id="@+id/sendEmail"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="180dp"
+        android:onClick="sendEmail"
+        android:src="@drawable/mail"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/textMail"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
