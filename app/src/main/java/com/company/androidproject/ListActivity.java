@@ -26,11 +26,15 @@ public class ListActivity extends AppCompatActivity {
     private void setInitialData() {
 
         contactList.add(new Contact(R.drawable.face, "Anna Anna", "358742596814"));
-        contactList.add(new Contact(R.drawable.face, "Max Max", "358742596814"));
-        contactList.add(new Contact(R.drawable.face, "David David", "358742596814"));
-        contactList.add(new Contact(R.drawable.face, "James James", "358742596814"));
-        contactList.add(new Contact(R.drawable.face, "Lidia Lidia", "358742596814"));
-        contactList.add(new Contact(R.drawable.face, "Alice Alice", "358742596814"));
-        contactList.add(new Contact(R.drawable.face, "Mark Mark", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_1, "Max Max", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_2, "David David", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_3, "James James", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_4, "Lidia Lidia", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_5, "Alice Alice", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_6, "Mark Mark", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_7, "Edvard Edvard", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_8, "Britney Britney", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_9, "Antony Antony", "358742596814"));
+        contactList.add(new Contact(R.drawable.face_10, "Mary Mary", "358742596814"));
     }
 }
