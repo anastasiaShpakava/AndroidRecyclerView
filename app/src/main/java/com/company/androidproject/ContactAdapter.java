@@ -39,12 +39,11 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         holder.nameView.setText(contact.getName());
         holder.numberView.setText(contact.getNumber());
 
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), SecondActivity.class);
-              view.getContext().startActivity(intent);
+             view.getContext().startActivity(intent);
             }
         });
     }
