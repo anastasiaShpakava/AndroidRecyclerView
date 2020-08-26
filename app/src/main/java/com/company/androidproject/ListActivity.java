@@ -25,7 +25,7 @@ public class ListActivity extends AppCompatActivity {
 
     private void setInitialData() {
 
-        contactList.add(new Contact(R.drawable.face, "Anna Anna", "358742596814"));
+        contactList.add(new Contact(R.drawable.face, "Anna Anna", "+375291255196"));
         contactList.add(new Contact(R.drawable.face_1, "Max Max", "358742596814"));
         contactList.add(new Contact(R.drawable.face_2, "David David", "358742596814"));
         contactList.add(new Contact(R.drawable.face_3, "James James", "358742596814"));

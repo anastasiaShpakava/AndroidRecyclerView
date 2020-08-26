@@ -1,6 +1,9 @@
 package com.company.androidproject;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +26,12 @@ public class SecondActivity extends AppCompatActivity {
             int resId = bundle.getInt("photoId");
             imageView.setImageResource(resId);
         }
+    }
+
+    public void dial(View v) {
+        String toDial = "tel:" + textNumber.getText().toString();
+        Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(toDial));
+        startActivity(callIntent);
     }
 }
 
