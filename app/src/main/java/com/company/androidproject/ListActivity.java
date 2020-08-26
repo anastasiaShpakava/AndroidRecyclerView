@@ -9,12 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
-private List<Contact> contactList = new ArrayList<>();
+    private List<Contact> contactList = new ArrayList<>();
     private RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        getSupportActionBar().hide();
         setInitialData();
         recyclerView = findViewById(R.id.list);
         ContactAdapter contactAdapter = new ContactAdapter(this, contactList);

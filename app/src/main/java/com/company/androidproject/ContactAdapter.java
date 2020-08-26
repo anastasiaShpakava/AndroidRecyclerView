@@ -41,9 +41,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
-           public void onClick(View view) {
+            public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), SecondActivity.class);
-             view.getContext().startActivity(intent);
+                view.getContext().startActivity(intent);
             }
         });
     }
