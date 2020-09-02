@@ -42,10 +42,10 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), SecondActivity.class);
+                Intent intent = new Intent(context, SecondActivity.class);
                 intent.putExtra("number", contact.getNumber());
                 intent.putExtra("photoId",contact.getImage());
-                view.getContext().startActivity(intent);
+               context.startActivity(intent);
             }
         });
     }
